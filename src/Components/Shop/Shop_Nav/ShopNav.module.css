@@ -1,0 +1,26 @@
+.ShopNav {
+    width: 200px;
+}
+
+.ShopNav li {
+    list-style: none;
+    padding: 20px 40px 0 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.ShopNav a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.ShopNav h2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px 0 290px;
+}

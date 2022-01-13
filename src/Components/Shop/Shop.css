@@ -1,0 +1,23 @@
+.Shop {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(5, 5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.ShopHeader_ShopHeader__wuiVt {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+.ShopNav_ShopNav__iqmpU {
+    grid-area: 2 / 1 / 5 / 2;
+}
+
+.Products_Products__A83L6 {
+    grid-area: 2 / 2 / 5 / 6;
+}
+
+.ShopFooter_ShopFooter__7dkJW {
+    grid-area: 5 / 1 / 6 / 6;
+}

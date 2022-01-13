@@ -20,7 +20,7 @@ export const HeaderCart = props => {
 
                                 <span className="header-cart-item-info">
 											{cart.cartInfo}
-										</span>
+                                </span>
                             </div>
 
                         )
