@@ -20,17 +20,16 @@
     padding-right: 15px;
 }
 
-.main_menu > li > NavLink {
+.main_menu > li > a {
     font-family: Montserrat-Regular;
     font-size: 15px;
-    text-decoration: none;
     color: #333333;
     padding: 0;
     border-bottom: 1px solid transparent;
 }
 
 li.sale-noti > a {
-    color: violet;
+    color: #e65540;
 }
 
 .main_menu > li:hover > a {

@@ -12,8 +12,7 @@ export class HeaderComponent extends Component {
         return (
             <nav className="menu">
                 <MainMenu
-                    menuName={this.props.menuName}
-                    subMenu={this.props.subMenu}
+                    menuItems={this.props.menuItems}
                 />
                 <HeaderIcons cartItemName={this.props.cartItemName} />
             </nav>

@@ -3,7 +3,12 @@ import classes from './Products.module.css'
 
 class Products extends Component {
 
+
+
+
     render() {
+
+
         return (
             <div className={classes.Products}>
 
@@ -14,7 +19,9 @@ class Products extends Component {
                                 src={product.imgUrl}
                                 alt="product"/>
                             <a href="">{product.name}</a>
+
                             <p>{product.price}</p>
+
                         </div>
                     )
                 })}
