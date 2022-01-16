@@ -7,11 +7,13 @@ const ShopNav = props => {
         <div className={classes.ShopNav}>
             <h2>Catigories</h2>
             <div><p>All</p></div>
-            { props.sportsName.map((sport, index) => {
+            {props.sportsName.map((sport, index) => {
                 return (
-                    <div><p onClick={() => props.onClickSports(sport, index)}><NavLink to="">{sport}</NavLink></p></div>
+                    <ul>
+                        <li onClick={() => props.onClickSports(sport, index)}><NavLink to="">{sport}</NavLink></li>
+                    </ul>
                 )
-            }) }
+            })}
 
         </div>
     )

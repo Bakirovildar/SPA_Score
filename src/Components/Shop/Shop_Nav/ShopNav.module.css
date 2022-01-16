@@ -9,17 +9,28 @@
     display: block;
 }
 
-.ShopNav div p {
-    cursor: pointer;
-}
-
-.ShopNav div p:hover {
-    text-decoration: none;
-    color: red;
-}
 
 .ShopNav h2 {
     display: flex;
     justify-content: center;
     padding: 20px 40px 0 80px;
+}
+
+.ShopNav ul {
+    list-style: none;
+
+}
+
+.ShopNav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+
+}
+
+.ShopNav li a:hover {
+    color: darkturquoise;
+    transform: inherit;
 }
