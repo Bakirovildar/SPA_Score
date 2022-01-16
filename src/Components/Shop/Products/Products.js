@@ -21,6 +21,7 @@ class Products extends Component {
                             <a href="">{product.name}</a>
 
                             <p>{product.price}</p>
+                            <button>Купить</button>
 
                         </div>
                     )
