@@ -6,6 +6,7 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+    height: 70px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;

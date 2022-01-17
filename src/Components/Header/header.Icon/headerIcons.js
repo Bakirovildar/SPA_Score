@@ -1,24 +1,23 @@
 import React from 'react'
-import {HeaderCart} from "./header.cart";
-import './Header.cart.css'
+import './HeaderIcon.css'
+import HeaderCart from "./HeaderCart/header.cart";
 
 export const HeaderIcons = props => {
+
+    const isHeaderCart = props.state.isHeaderCart
+
     return (
-        <div className="header-icons">
-            <a href="#" className="header-wrapicon1 dis-block">
-                <img
-                    src='https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80'
-                    className='header-icon1'/>
-            </a>
-
-            <span className="linedivide1"></span>
-
+        <div className="header-icons" onClick={() => props.onClickIcon()}>
             <div className="header-wrapicon2" >
-                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80"
+                <img src="/src/images/shopping-cart_icon-icons.com_69913.png"
                     className='header-icon1 js-show-header-dropdown'/>
                     <span className="header-icons-noti">0</span>
-                <HeaderCart cartName={props.cartItemName} />
             </div>
+
+                {isHeaderCart ?<HeaderCart /> : null }
+
+
+
         </div>
 )
 }

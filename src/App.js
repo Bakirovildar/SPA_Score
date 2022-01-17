@@ -10,6 +10,7 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 
 const state = {
+    isHeaderCart: false,
     sports: ['football', 'basketball', 'volleyball'],
     navMenu: [
         {
@@ -140,6 +141,12 @@ export class App extends Component {
         })
     }
 
+    onClickIcon = () => {
+        !this.state.isHeaderCart
+            ? this.setState({isHeaderCart: true})
+            : this.setState({isHeaderCart: false})
+    }
+
 
 
     render() {
@@ -153,6 +160,8 @@ export class App extends Component {
                         key={1}
                         menuItems={this.state.navMenu}
                         cartItemName={this.state.cartItemName}
+                        onClickIcon={this.onClickIcon}
+                        state={this.state}
                     />
 
                     <Routes>

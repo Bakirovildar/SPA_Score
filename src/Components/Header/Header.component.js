@@ -10,11 +10,16 @@ export class HeaderComponent extends Component {
 
     render() {
         return (
-            <nav className="menu">
+            <nav className="main_menu">
                 <MainMenu
                     menuItems={this.props.menuItems}
                 />
-                <HeaderIcons cartItemName={this.props.cartItemName} />
+                <HeaderIcons
+                    cartItemName={this.props.cartItemName}
+                    onClickIcon={this.props.onClickIcon}
+                    state={this.props.state}
+
+                />
             </nav>
         )
     }

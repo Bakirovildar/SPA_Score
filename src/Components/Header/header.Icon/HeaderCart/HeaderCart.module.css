@@ -1,0 +1,12 @@
+.HeaderCart {
+    width: 100px;
+    height: 100px;
+    background: #61dafb;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.HeaderCart div {
+
+}
