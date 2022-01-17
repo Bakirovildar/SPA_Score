@@ -16,8 +16,6 @@ class Shop extends Component {
                 <div className='ShopNav_ShopNav__iqmpU'><ShopNav
                     sportsName={this.props.sportsName}
                     onClickSports={this.props.onClickSports}
-                    products={this.props.products}
-
                 /></div>
                 <div className='Products_Products__A83L6'>
                     <Products  products={this.props.products}/>

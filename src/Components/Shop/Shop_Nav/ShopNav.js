@@ -6,7 +6,7 @@ const ShopNav = props => {
     return (
         <div className={classes.ShopNav}>
             <h2>Catigories</h2>
-            <div><p>All</p></div>
+
             {props.sportsName.map((sport, index) => {
                 return (
                     <ul>
