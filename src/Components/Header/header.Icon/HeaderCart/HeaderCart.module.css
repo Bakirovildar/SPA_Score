@@ -1,12 +1,18 @@
 .HeaderCart {
-    width: 100px;
-    height: 100px;
-    background: #61dafb;
-    position: absolute;
-    top: 40px;
-    right: 10px;
+    position: fixed;
+    top: 49px;
+    right: 0px;
 }
 
 .HeaderCart div {
-
+    width: 340px;
+    height: 413px;
+    background: #fff;
+    box-shadow:
+            inset 0px 11px 8px -10px #CCC,
+            inset 0px -11px 8px -10px #CCC;
+    border-top: 1px solid black;
+    transform: translateY(0px);
+    transition: transform .22ms ease-in;
+    z-index: 100;
 }
