@@ -14,7 +14,11 @@ export const HeaderIcons = props => {
                     <span className="header-icons-noti">0</span>
             </div>
 
-                {isHeaderCart ?<HeaderCart /> : null }
+                {isHeaderCart ?<HeaderCart
+                    productsInCart={props.productsInCart}
+                    state={props.state}
+
+                /> : null }
 
         </div>
 )

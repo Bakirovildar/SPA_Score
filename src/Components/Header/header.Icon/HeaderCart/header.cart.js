@@ -3,12 +3,19 @@ import classes from './HeaderCart.module.css'
 import CartProduct from "./CartProduct/CartProduct";
 
 const HeaderCart = props => {
+
+
     return (
         <div className={classes.HeaderCart}>
             <div className={classes.wrapperCart}>
 
                 <div className={classes.productCart}>
-                    <CartProduct />
+
+                    {props.state.productsInCart.length ? props.state.productsInCart.map(product => {
+                        return (
+                            <CartProduct product={product} />
+                        )})
+                        :null}
 
                 </div>
                 <div className={classes.totalCart}><p>total:$75</p></div>

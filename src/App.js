@@ -120,7 +120,8 @@ const state = {
             imgUrl: 'https://images.unsplash.com/photo-1511167814253-23b850fcd859?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'
         }
     ],
-    products: []
+    products: [],
+    productsInCart: []
 }
 
 export class App extends Component {
@@ -147,6 +148,14 @@ export class App extends Component {
             : this.setState({isHeaderCart: false})
     }
 
+    onClickToCartHandler = id => {
+        this.state.products.map(product =>
+            product.id === id
+                ? this.setState({productsInCart: product})
+                : null
+        )
+    }
+
 
 
     render() {
@@ -170,6 +179,7 @@ export class App extends Component {
                                 sportsName={this.state.sports}
                                 products={products}
                                 onClickSports={this.onClickSports}
+                                onClickToCart={this.onClickToCartHandler}
                             />}
                         />
                         <Route path='/sale' element={<Sale/>}/>

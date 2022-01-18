@@ -8,7 +8,6 @@ class Products extends Component {
 
     render() {
 
-
         return (
             <div className={classes.Products}>
 
@@ -21,13 +20,11 @@ class Products extends Component {
                             <a href="">{product.name}</a>
 
                             <p>{product.price}</p>
-                            <button>Купить</button>
+                            <button onClick={() => this.props.onClickToCart(product.id)}>В корзину</button>
 
                         </div>
                     )
                 })}
-
-
             </div>
         )
     }
