@@ -17,6 +17,7 @@ export class HeaderComponent extends Component {
                 <HeaderIcons
                     cartItemName={this.props.cartItemName}
                     onClickIcon={this.props.onClickIcon}
+                    onClickCheckoutCart={this.props.onClickCheckoutCart}
                     state={this.props.state}
                 />
             </nav>

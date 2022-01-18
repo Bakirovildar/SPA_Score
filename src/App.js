@@ -155,6 +155,13 @@ export class App extends Component {
         })
     }
 
+    onClickCheckoutCart = () => {
+
+        this.setState({
+            productsInCart: []
+        })
+    }
+
 
 
     render() {
@@ -169,7 +176,9 @@ export class App extends Component {
                         menuItems={this.state.navMenu}
                         cartItemName={this.state.cartItemName}
                         onClickIcon={this.onClickIcon}
+                        onClickCheckoutCart={this.onClickCheckoutCart}
                         state={this.state}
+
                     />
 
                     <Routes>

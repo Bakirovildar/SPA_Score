@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import classes from './Products.module.css'
+import {NavLink} from "react-router-dom";
 
 class Products extends Component {
 
@@ -17,7 +18,7 @@ class Products extends Component {
                             <img
                                 src={product.imgUrl}
                                 alt="product"/>
-                            <a href="">{product.name}</a>
+                            <NavLink to="">{product.name}</NavLink>
 
                             <p>{product.price}</p>
                             <button onClick={() => this.props.onClickToCart(product.id)}>В корзину</button>

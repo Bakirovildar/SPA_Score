@@ -22,7 +22,7 @@ const HeaderCart = props => {
                 <div className={classes.totalCart}><p>total:$75</p></div>
                 <div className={classes.cartFooter}>
                     <button>view cart</button>
-                    <button>checkout</button>
+                    <button onClick={() => props.onClickCheckoutCart()}>checkout</button>
                 </div>
 
             </div>

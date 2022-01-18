@@ -12,10 +12,11 @@ export const HeaderIcons = props => {
             <div className="header-wrapicon2" onClick={() => props.onClickIcon()}>
                 <img src="/src/images/shopping-cart_icon-icons.com_69913.png"
                      className='header-icon1 js-show-header-dropdown'/>
-                <span className="header-icons-noti">0</span>
+                <span className="header-icons-noti">{props.state.productsInCart.length}</span>
             </div>
 
             {isHeaderCart && <HeaderCart
+                onClickCheckoutCart={props.onClickCheckoutCart}
                 state={props.state}
             />}
 
