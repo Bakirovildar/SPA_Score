@@ -1,5 +1,6 @@
 import React from "react";
 import classes from './HeaderCart.module.css'
+import CartProduct from "./CartProduct/CartProduct";
 
 const HeaderCart = props => {
     return (
@@ -7,29 +8,7 @@ const HeaderCart = props => {
             <div className={classes.wrapperCart}>
 
                 <div className={classes.productCart}>
-                    <div className={classes.Cart}>
-                        <img src="" alt=""/>
-                        <div>
-                            <a href="">White Shirt With Pleat Detail Back</a>
-                            <p>1 x $19.00</p>
-                        </div>
-                    </div>
-
-                    <div className={classes.Cart}>
-                        <img src="" alt=""/>
-                        <div>
-                            <a href="">White Shirt With Pleat Detail Back</a>
-                            <p>1 x $19.00</p>
-                        </div>
-                    </div>
-
-                    <div className={classes.Cart}>
-                        <img src="" alt=""/>
-                        <div>
-                            <a href="">White Shirt With Pleat Detail Back</a>
-                            <p>1 x $19.00</p>
-                        </div>
-                    </div>
+                    <CartProduct />
 
                 </div>
                 <div className={classes.totalCart}><p>total:$75</p></div>
