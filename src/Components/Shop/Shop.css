@@ -1,7 +1,7 @@
 .Shop {
     display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    grid-template-rows: repeat(5, 5fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 5fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }

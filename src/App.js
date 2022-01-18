@@ -146,6 +146,7 @@ export class App extends Component {
         !this.state.isHeaderCart
             ? this.setState({isHeaderCart: true})
             : this.setState({isHeaderCart: false})
+
     }
 
     onClickToCartHandler = id => {
