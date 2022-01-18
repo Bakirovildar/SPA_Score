@@ -4,7 +4,7 @@
     right: 0px;
 }
 
-.HeaderCart div {
+.wrapperCart {
     width: 340px;
     height: 413px;
     background: #fff;
@@ -15,4 +15,76 @@
     transform: translateY(0px);
     transition: transform .22ms ease-in;
     z-index: 100;
+}
+.productCart {
+    min-height: 320px;
+    max-height: 320px;
+
+}
+
+.productCart img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.productCart img:hover {
+    opacity: .5;
+}
+
+.Cart {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px 5px 10px;
+}
+
+.Cart a {
+    font-size: 14px;
+    position: relative;
+    left: 18px;
+    max-width: 200px;
+    max-height: 40px;
+    text-decoration: none;
+    color: #333333 ;}
+
+.Cart a:hover {
+    color: #ff543c;
+
+}
+
+.Cart p {
+    font-size: 12px;
+    color: gray;
+    position: relative;
+    top: 10px;
+    right: 60px;
+
+}
+
+.totalCart {
+    position: relative;
+    bottom: 20px;
+    left: 97px;
+}
+
+.cartFooter {
+    position: relative;
+    bottom: 20px;
+}
+
+.cartFooter button {
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 5px;
+    background: #222222;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.cartFooter button:hover {
+    background: #ff543c;
 }
