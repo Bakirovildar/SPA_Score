@@ -6,7 +6,7 @@ class CartProduct extends React.Component {
 
     render() {
         const state = this.props.state
-
+        console.log(this.props)
         return (
             <div className={classes.Cart}>
                 {console.log(state)}

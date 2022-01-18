@@ -149,11 +149,10 @@ export class App extends Component {
     }
 
     onClickToCartHandler = id => {
-        this.state.products.map(product =>
-            product.id === id
-                ? this.setState({productsInCart: product})
-                : null
-        )
+        const filtered = this.state.products.filter(product => product.id === id)
+        this.setState({
+            productsInCart: [...this.state.productsInCart, ...filtered]
+        })
     }
 
 
