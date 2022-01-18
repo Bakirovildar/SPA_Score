@@ -1,3 +1,4 @@
 .FooterMenu {
-
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,10 +1,15 @@
 import React from "react";
 import classes from './FooterMenu.module.css'
+import Categories from "./Catigories/Categories";
+import Links from "./Links/Links";
+import Help from "./Help/Help";
 
 const FooterMenu = props => {
     return (
         <div className={classes.FooterMenu}>
-            <h1>FooterMenu</h1>
+            <Categories />
+            <Links />
+            <Help />
         </div>
     )
 }

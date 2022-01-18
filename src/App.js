@@ -66,21 +66,21 @@ const state = {
             sport: 'football',
             name: 'Мяч select foot',
             id: 1,
-            price: '$76.00',
+            price: 76.00,
             imgUrl: 'https://images.unsplash.com/photo-1594713110068-373988a737e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80'
         },
         {
             sport: 'football',
             name: 'Мяч puma foot',
             id: 2,
-            price: '$72.00',
+            price: 72.00,
             imgUrl: 'https://images.unsplash.com/photo-1569367095329-7804373aea37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'
         },
         {
             sport: 'football',
             name: 'Мяч adidas PRO 22 foot',
             id: 3,
-            price: '$78.00',
+            price: 78.00,
             imgUrl: 'https://images.unsplash.com/photo-1594749795098-7ed8a1c1209a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
         },
 
@@ -88,35 +88,35 @@ const state = {
             sport: 'basketball',
             name: 'Мяч basket',
             id: 4,
-            price: '$75.00',
+            price: 75.00,
             imgUrl: 'https://images.unsplash.com/photo-1482195740274-e367dbcdb9c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80'
         },
         {
             sport: 'volleyball',
             name: 'Мяч volleyball',
             id: 5,
-            price: '$73.00',
+            price: 73.00,
             imgUrl: 'https://images.unsplash.com/photo-1592656094267-764a45160876?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
         },
         {
             sport: 'volleyball',
             name: 'Мяч volleyball',
             id: 6,
-            price: '$73.00',
+            price: 73.00,
             imgUrl: 'https://images.unsplash.com/photo-1521138054413-5a47d349b7af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80'
         },
         {
             sport: 'basketball',
             name: 'Мяч basket',
             id: 7,
-            price: '$73.00',
+            price: 73.00,
             imgUrl: 'https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
         },
         {
             sport: 'football',
             name: 'Мяч football',
             id: 8,
-            price: '$73.00',
+            price: 73.00,
             imgUrl: 'https://images.unsplash.com/photo-1511167814253-23b850fcd859?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'
         }
     ],
