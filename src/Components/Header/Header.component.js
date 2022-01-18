@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './Header.component.css'
 import {MainMenu} from "./mainMenu";
 import {HeaderIcons} from "./header.Icon/headerIcons";
+import Products from "../Shop/Products/Products";
 
 export class HeaderComponent extends Component {
     constructor(props) {
@@ -19,6 +20,7 @@ export class HeaderComponent extends Component {
                     onClickIcon={this.props.onClickIcon}
                     onClickCheckoutCart={this.props.onClickCheckoutCart}
                     state={this.props.state}
+                    onClickImgDelete={this.props.onClickImgDelete}
                 />
             </nav>
         )

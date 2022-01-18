@@ -1,6 +1,7 @@
 import React from 'react'
 import './HeaderIcon.css'
 import HeaderCart from "./HeaderCart/header.cart";
+import Products from "../../Shop/Products/Products";
 
 export const HeaderIcons = props => {
 
@@ -16,6 +17,7 @@ export const HeaderIcons = props => {
             </div>
 
             {isHeaderCart && <HeaderCart
+                onClickImgDelete={props.onClickImgDelete}
                 onClickCheckoutCart={props.onClickCheckoutCart}
                 state={props.state}
             />}

@@ -163,6 +163,13 @@ export class App extends Component {
         })
     }
 
+    onClickImgDelete = id => {
+        const products = this.state.productsInCart.filter(product => product.id !== id)
+        this.setState({
+            productsInCart: products
+        })
+
+    }
 
 
     render() {
@@ -178,6 +185,7 @@ export class App extends Component {
                         cartItemName={this.state.cartItemName}
                         onClickIcon={this.onClickIcon}
                         onClickCheckoutCart={this.onClickCheckoutCart}
+                        onClickImgDelete={this.onClickImgDelete}
                         state={this.state}
 
                     />
@@ -189,6 +197,7 @@ export class App extends Component {
                                 products={products}
                                 onClickSports={this.onClickSports}
                                 onClickToCart={this.onClickToCartHandler}
+
                             />}
                         />
                         <Route path='/sale' element={<Sale/>}/>

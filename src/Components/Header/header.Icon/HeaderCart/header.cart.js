@@ -1,6 +1,7 @@
 import React from "react";
 import classes from './HeaderCart.module.css'
 import CartProduct from "./CartProduct/CartProduct";
+import Products from "../../../Shop/Products/Products";
 
 
 const HeaderCart = props => {
@@ -20,7 +21,10 @@ const HeaderCart = props => {
 
                     {props.state.productsInCart.map(product => {
                         return (
-                            <CartProduct product={product} />
+                            <CartProduct
+                                product={product}
+                                onClickImgDelete={props.onClickImgDelete}
+                            />
                         )
                     })}
 
